@@ -1,0 +1,45 @@
+{
+  "name": "broker-factory-module",
+  "version": "0.0.2",
+  "description": "Broker factory module for nestjs",
+  "author": "@crypton-app-market",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "preinstall": "npm run build",
+    "format": "prettier --write \"**/*.ts\"",
+    "lint": "eslint 'lib/**/*.ts' --fix",
+    "compodoc": "npx @compodoc/compodoc -s -c .compodocrc.json"
+  },
+  "dependencies": {
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/common": "^8.0.0",
+    "amqplib": "^0.9.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@compodoc/compodoc": "^1.1.19",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@types/amqplib": "^0.8.2",
+    "@types/jest": "27.5.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.3.2",
+    "source-map-support": "^0.5.20",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "4.0.0",
+    "typescript": "^4.3.5",
+    "jest": "28.0.3"
+  },
+  "main": "dist/index.js",
+  "rootDir": "src",
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "tsconfig.json"
+  ]
+}

@@ -1,0 +1,15 @@
+# compiled output
+node_modules
+dist
+
+# IDEs and editors
+.idea
+
+#compodoc
+documentation
+
+
+# configuration
+package-lock.json
+tslint.json
+.prettierrc
